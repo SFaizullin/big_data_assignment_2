@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import sys
 import re
 
@@ -17,7 +16,6 @@ for line in sys.stdin:
     
     WORDS = re.findall(r'[a-zA-Z]+', doc_text.lower())
     
-    # Emit doc length and title for metadata tracking
     print(f"!META#{doc_id}\t{len(WORDS)}|{doc_title}")
     
     for word in WORDS:

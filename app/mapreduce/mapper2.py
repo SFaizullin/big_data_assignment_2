@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import sys
 
 for line in sys.stdin:
@@ -19,5 +18,4 @@ for line in sys.stdin:
         print(f"!META_TOTAL_DOCS\t1")
         print(f"!META_TOTAL_LEN\t{length}")
     else:
-        # Pass word and tf to Reducer 2 to compute df
         print(f"{key}\t{val}")
